@@ -11,13 +11,27 @@
 
 ---
 
-## Installation
+## Quick Start
 
 ```bash
+# Install globally (requires Go 1.21+)
 go install github.com/Shashank0701-byte/git-heat/cmd/git-heat@latest
+
+# Run from inside any git repo
+cd your-project/
+git-heat summary
+git-heat files --top 10
+git-heat author "YourName"
 ```
 
-Or build from source:
+That's it — one command to install, works on any repo, fully offline.
+
+### Prerequisites
+
+- **Go 1.21+** — [install Go](https://go.dev/dl/)
+- **Git** — must be available in your `PATH`
+
+### Build from Source
 
 ```bash
 git clone https://github.com/Shashank0701-byte/git-heat.git
@@ -203,8 +217,20 @@ The `--json` flag produces structured output for piping to other tools:
 
 ## License
 
-MIT
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Built by [Shashank](https://github.com/Shashank0701-byte) as a portfolio project demonstrating git internals, Go CLI development, and terminal UI design.
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feat/awesome-feature`)
+3. Commit your changes (`git commit -m 'feat: add awesome feature'`)
+4. Push to the branch (`git push origin feat/awesome-feature`)
+5. Open a Pull Request
+
+---
+
+Built by [Shashank](https://github.com/Shashank0701-byte) — a portfolio project demonstrating git internals, Go CLI development, and terminal UI design.
